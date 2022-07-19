@@ -1,0 +1,141 @@
+/*
+Seham Anter
+first color  : #d8131b;
+*/
+/* genral */
+ html{
+	scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto','Lato',sans-serif;
+    overflow-x: hidden;
+}
+
+.main{
+    background-color: rgb(26, 58, 61);
+    height: 70vh;
+    padding: 0px;
+    margin: 0px;
+}
+.logo {
+    color: rgb(219, 106, 14);
+    transition:.1s;
+    -webkit-transition:.1s;
+    -moz-transition:.1s;
+    -ms-transition:.1s;
+    -o-transition:.1s;
+}
+.totalScore span{
+    height: 100%;
+    color:  rgb(26, 58, 61);
+    width: 1px;
+}
+.logo h3::first-letter{
+    font-weight: bold;
+    color: rgb(216, 212, 208); 
+}
+.logo:hover h3::first-letter{
+    color: rgb(219, 106, 14);
+}
+.logo span{
+    color: rgb(216, 212, 208); 
+    font-size: 17px;
+}
+.logo:hover{
+    color: rgb(216, 212, 208); 
+}
+
+.main .frstsec{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:rgb(202, 213, 214) 1px solid;
+    border: none none dotted none;
+    background-color: #1a3a3d;
+    padding: 7px 0px 0px 4px;
+    outline: none;     
+}
+input {
+    color: #f8f7f7;
+}
+
+.dropdown{
+    margin-right: 10px;
+    text-align: center;
+}
+.dropdown .dropbtn,.dropdown a {
+    width:100%;
+    padding: 10px 0px;
+}
+.dropdown .dropbtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 0px;
+    background-color: rgb(219, 106, 14);
+  }
+  .dropdown-content {
+    display: none;
+    background-color: rgb(145 145 145);
+  }
+  .dropdown-content a {
+    color: white;
+    text-decoration: none;
+  }
+  .submit button{
+      width: 80%;
+      padding:10px 0px;
+      border-radius:3px  ;
+      -webkit-border-radius:3px  ;
+      -moz-border-radius:3px  ;
+      -ms-border-radius:3px  ;
+      -o-border-radius:3px  ;
+}
+
+  .submit button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(219, 106, 14); 
+  }
+  .show {
+     width:100%; 
+    display: block;
+  }
+::placeholder{
+    color :rgb(202, 213, 214);
+    font-size: 13px;
+}
+.result{
+   padding-top: 2%;  
+}
+.result .left div{
+    margin-left: 7.6rem !important;
+}
+.result h3{
+     color: #3b3b3b;
+ }
+ .result span{
+    font-size: 10vh;
+     color: #919191;
+ }
+   img {
+   width: 100%;
+   height: 100%;
+   margin-left: 12px;
+   object-fit: cover;
+ }
+@media(max-width: 991px){
+  .scbt{
+    display: none;
+  }
+}
+/****************/
+/**********/
+/*
+Seham Anter
+first color  : #d8131b;
+*/

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sequence Alignment</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="imgs/f-w-img/lg.png" /> -->
+    <link rel="stylesheet"href="{{url_for('static',filename='css/main.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="templates/imgs/logo.png">
+
+  </head>
+  <body>
+  <!----------------------------------------------------------------------------------------------->
+  <!------------------------------------------- start --------------------------------------------->
+  <!----------------------------------------------------------------------------------------------->
+    <!-- navbar -->
+  <div class="container-flued">
+    <div class="row">
+    <!-- main -->
+      <div class="container-flued">
+          <div class="row main d-flex">
+              <div class="content col-7  p-3">
+                <a class="navbar-brand logo" href="#">
+                  <h3>Sequence<span>Alignment</span></h3>
+                </a>
+                  <div class="mb-3">
+                    <input type="text" class="frstsec" id="exampleFormControlInput1" style="font-family:'Roboto','Lato',sans-serif,'Font Awesome 5 Brands' !important"
+                    type="text" placeholder="&#xf267 Enter Frist Sequence..">
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="frstsec" id="exampleFormControlInput1" style="font-family:'Roboto','Lato',sans-serif,'Font Awesome 5 Brands' !important"
+                    type="text" placeholder="&#xf267 Enter Second Sequence..">
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="frstsec" id="exampleFormControlInput1" style="font-family:'Roboto','Lato',sans-serif,'Font Awesome 5 Brands' !important"
+                    type="text" placeholder="&#xf267 Enter Third Sequence..">
+                  </div>
+              <div class="d-flex">
+                <div class="submit col-4" >
+
+                  <input type="submit" value="ALIGN">
+                </div>
+                  <div class="submit col-4" >
+                 <form action="shortenurl">
+                  <input type="submit" value="pairwise alignment">
+                   </form>
+                </div>
+
+                </div>
+                </div>
+            <div class="img col-5">
+                <img src="static/imgs/main-img.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      <!------->
+      <!-- main -->
+      <div class="container-flued">
+        <div class="row result d-flex text-center">
+          <div class="left col-7 d-flex">
+            <div class="match">
+              <h3>Match</h3>
+              <span>0</span>
+            </div>
+            <div class="misMatch">
+              <h3>Mismatch</h3>
+              <span>0</span>
+            </div>
+            <div class="gap">
+              <h3>Gap</h3>
+              <span>0</span>
+           </div>
+          </div>
+          <div class="right col-5">
+            <span></span>
+            <div class="totalScore">
+              <h3>Total Score</h3>
+              <span>0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------->
+        <!-- footer -->
+        <div class="container-flued">
+              <div class="row">
+                <div class="footer">
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!--------------->
+  <!--  -->
+  <!----------------------------------------------------------------------------------------------->
+  <!------------------------------------------- js ------------------------------------------------>
+  <!----------------------------------------------------------------------------------------------->
+
+<script>
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+  </script>
+
+      <script src="js/jquery-3.6.0.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ </body>
+</html>
